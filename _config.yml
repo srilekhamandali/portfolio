@@ -1,13 +1,5 @@
 title: Srilekha Mandali
-
-description: >
-  Data Engineer | ETL Developer | Data Analyst
-  specializing in enterprise data integration,
-  SQL, Informatica, Python, analytics, and AI automation.
-
-theme: jekyll-theme-minimal
-
-show_downloads: false
+description: Data Engineer, ETL Developer, and Data Analyst specializing in enterprise data integration, SQL, Informatica, Python, analytics, and AI automation.
 
 url: "https://srilekhamandali.github.io"
 baseurl: "/portfolio"
@@ -16,9 +8,12 @@ author:
   name: Srilekha Mandali
   email: mandalisrilekha12@gmail.com
 
-github_username: srilekhamandali
-
 linkedin_url: "https://www.linkedin.com/in/srilekha-mandali-2849691ab"
+github_url: "https://github.com/srilekhamandali"
 
-# Add this line after uploading a professional photo:
-# logo: /assets/img/profile.jpg
+show_downloads: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
