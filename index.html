@@ -21,7 +21,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
   <meta
     name="keywords"
-    content="Srilekha Mandali, Data Engineer, ETL Developer, Data Analyst, Informatica PowerCenter, SQL, Python, Power BI, Tableau, n8n, AI Automation"
+    content="Srilekha Mandali, Data Engineer, ETL Developer, Data Analyst, Informatica PowerCenter, SQL, Python, Power BI, Tableau, n8n, Make.com, AI Automation"
   >
 
   <meta name="author" content="Srilekha Mandali">
@@ -30,7 +30,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
   <meta
     property="og:description"
-    content="Data Engineer, ETL Developer, and Data Analyst specializing in data integration, analytics, and AI-powered automation."
+    content="Enterprise data engineering, analytics, ETL development, and AI-powered workflow automation."
   >
 
   <meta property="og:type" content="website">
@@ -46,47 +46,60 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
     rel="stylesheet"
     href="{{ '/assets/css/style.css' | relative_url }}"
   >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{ '/assets/images/favicon.png' | relative_url }}"
+  >
 </head>
 
 <body>
 
-  <div class="page-layout">
+  <div class="site-layout">
 
-    <!-- =========================================
-         LEFT PROFILE SIDEBAR
-    ========================================== -->
+    <!-- ==================================================
+         LEFT SIDEBAR
+    =================================================== -->
 
     <aside class="profile-sidebar">
 
-      <div class="sidebar-inner">
+      <div class="sidebar-content">
 
-        <div class="profile-photo-wrapper">
+        <div class="profile-image-area">
 
-          <div class="profile-photo-placeholder">
-            <span>SM</span>
+          <div class="profile-image-frame">
+
+            <span class="profile-initials">SM</span>
 
             <img
               src="{{ '/assets/images/profile.jpg' | relative_url }}"
               alt="Srilekha Mandali"
-              class="profile-photo"
+              class="profile-image"
               onerror="this.style.display='none';"
             >
+
           </div>
 
           <div class="availability-badge">
+
             <span class="availability-dot"></span>
-            Open to opportunities
+
+            Available for full-time roles
+
           </div>
 
         </div>
 
-        <div class="profile-introduction">
+        <div class="profile-copy">
 
-          <p class="profile-eyebrow">Hello, I’m</p>
+          <p class="profile-greeting">
+            Hello, I’m
+          </p>
 
           <h1>Srilekha Mandali</h1>
 
-          <p class="profile-title">
+          <p class="profile-role">
             Data Engineer
             <span>•</span>
             ETL Developer
@@ -95,33 +108,33 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
           </p>
 
           <p class="profile-summary">
-            I build reliable data pipelines, scalable ETL workflows,
-            actionable dashboards, and AI-powered automation solutions.
+            Designing scalable enterprise data pipelines, analytical
+            reporting solutions, and AI-powered workflow automation systems.
           </p>
 
         </div>
 
-        <div class="sidebar-contact">
-
-          <a
-            href="mailto:mandalisrilekha12@gmail.com"
-            class="sidebar-primary-button"
-          >
-            Contact Me
-          </a>
+        <div class="sidebar-actions">
 
           <a
             href="{{ '/assets/files/Srilekha_Mandali_Resume.pdf' | relative_url }}"
             target="_blank"
             rel="noopener noreferrer"
-            class="sidebar-secondary-button"
+            class="sidebar-button sidebar-button-primary"
           >
-            View Resume
+            Download Resume
+          </a>
+
+          <a
+            href="mailto:mandalisrilekha12@gmail.com"
+            class="sidebar-button sidebar-button-secondary"
+          >
+            Contact Me
           </a>
 
         </div>
 
-        <div class="sidebar-links">
+        <div class="sidebar-social">
 
           <a
             href="https://www.linkedin.com/in/srilekha-mandali-2849691ab"
@@ -147,13 +160,13 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
         <div class="sidebar-location">
 
-          <p class="location-label">Location</p>
+          <p class="sidebar-label">Location</p>
 
-          <p>
+          <p class="location-value">
             Tampa Bay Area, Florida
           </p>
 
-          <p class="relocation-text">
+          <p class="relocation-value">
             Open to relocation
           </p>
 
@@ -161,13 +174,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
         <div class="sidebar-footer">
 
-          <p>
-            © 2026 Srilekha Mandali
-          </p>
+          <p>© 2026 Srilekha Mandali</p>
 
-          <p>
-            Built with GitHub Pages
-          </p>
+          <p>Built with GitHub Pages</p>
 
         </div>
 
@@ -175,9 +184,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
     </aside>
 
-    <!-- =========================================
-         MAIN PORTFOLIO CONTENT
-    ========================================== -->
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
 
     <main class="main-content">
 
@@ -189,9 +198,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
         <a href="#skills">Skills</a>
 
-        <a href="#experience">Experience</a>
-
         <a href="#projects">Projects</a>
+
+        <a href="#experience">Experience</a>
 
         <a href="#publications">Publications</a>
 
@@ -201,14 +210,14 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </nav>
 
-      <!-- =========================================
+      <!-- ==================================================
            HERO
-      ========================================== -->
+      =================================================== -->
 
       <section class="hero-section" id="about">
 
-        <div class="hero-decoration hero-decoration-one"></div>
-        <div class="hero-decoration hero-decoration-two"></div>
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
 
         <div class="hero-content">
 
@@ -217,22 +226,21 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
           </p>
 
           <h2>
-            Transforming complex data into reliable,
-            intelligent, and actionable solutions.
+            Designing enterprise data platforms, intelligent analytics,
+            and AI automation solutions.
           </h2>
 
-          <p class="hero-description">
-            I am a Data Engineer, ETL Developer, and Data Analyst with
-            professional experience designing enterprise ETL pipelines,
-            optimizing SQL workflows, improving data quality, supporting
-            production systems, and developing business reporting solutions.
+          <p class="hero-introduction">
+            Data Engineer and ETL Developer with enterprise experience
+            designing data integration pipelines, optimizing SQL workflows,
+            validating large datasets, supporting production systems, and
+            delivering reporting solutions.
           </p>
 
-          <p class="hero-description">
-            My work combines enterprise data engineering with modern
-            AI-powered automation using Informatica PowerCenter, SQL, Python,
-            Power BI, Tableau, n8n, Make.com, OpenAI APIs, Google Gemini AI,
-            LangChain, Google Sheets, and Looker Studio.
+          <p class="hero-introduction">
+            I combine enterprise data engineering with modern automation
+            platforms and AI services to build structured, explainable,
+            and scalable business solutions.
           </p>
 
           <div class="hero-actions">
@@ -243,65 +251,81 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               rel="noopener noreferrer"
               class="button button-primary"
             >
-              View Resume
+              Download Resume
             </a>
 
             <a
               href="#projects"
               class="button button-secondary"
             >
-              Explore Projects
+              View Projects
             </a>
 
             <a
               href="mailto:mandalisrilekha12@gmail.com"
-              class="button button-text"
+              class="button button-link"
             >
-              Contact Me →
+              Let’s Connect →
             </a>
 
           </div>
 
         </div>
 
-        <div class="statistics-grid">
+        <div class="metrics-grid">
 
-          <article class="statistic-card">
+          <article class="metric-card">
 
-            <p class="statistic-number">20+</p>
+            <p class="metric-number">20+</p>
 
-            <p class="statistic-label">
-              ETL pipelines supported and optimized
+            <p class="metric-title">
+              Enterprise ETL Pipelines
+            </p>
+
+            <p class="metric-description">
+              Developed, supported, and optimized.
             </p>
 
           </article>
 
-          <article class="statistic-card">
+          <article class="metric-card">
 
-            <p class="statistic-number">2M+</p>
+            <p class="metric-number">3</p>
 
-            <p class="statistic-label">
-              Enterprise records analyzed and validated
+            <p class="metric-title">
+              AI Automation Systems
+            </p>
+
+            <p class="metric-description">
+              Built across research, finance, and education.
             </p>
 
           </article>
 
-          <article class="statistic-card">
+          <article class="metric-card">
 
-            <p class="statistic-number">20%</p>
+            <p class="metric-number">2</p>
 
-            <p class="statistic-label">
-              Approximate SQL performance improvement
+            <p class="metric-title">
+              Research Publications
+            </p>
+
+            <p class="metric-description">
+              Co-authored and presented in 2026.
             </p>
 
           </article>
 
-          <article class="statistic-card">
+          <article class="metric-card">
 
-            <p class="statistic-number">3.93</p>
+            <p class="metric-number">3.93</p>
 
-            <p class="statistic-label">
-              Master of Science GPA
+            <p class="metric-title">
+              Graduate GPA
+            </p>
+
+            <p class="metric-description">
+              MS in Management Information Systems.
             </p>
 
           </article>
@@ -310,67 +334,69 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
-           PROFESSIONAL SUMMARY
-      ========================================== -->
+      <!-- ==================================================
+           PROFESSIONAL PROFILE
+      =================================================== -->
 
       <section class="content-section">
 
         <div class="section-heading">
 
-          <p class="section-kicker">Professional Profile</p>
+          <p class="section-kicker">
+            Professional Profile
+          </p>
 
-          <h2>About Me</h2>
+          <h2>
+            Engineering data solutions from requirements to production.
+          </h2>
 
           <p>
-            A combination of enterprise data engineering experience,
-            analytical problem-solving, academic research, and modern
-            workflow automation.
+            My experience spans enterprise ETL development, production
+            support, business analytics, academic research, technical
+            instruction, and AI-enabled workflow automation.
           </p>
 
         </div>
 
-        <div class="about-grid">
+        <div class="profile-cards-grid">
 
-          <article class="about-card">
+          <article class="profile-card">
 
-            <p class="card-number">01</p>
+            <p class="card-index">01</p>
 
             <h3>Enterprise Data Engineering</h3>
 
             <p>
-              Experienced in designing, developing, monitoring, and
-              optimizing ETL pipelines that integrate data from multiple
-              enterprise source systems into centralized reporting
+              Build and maintain ETL workflows that integrate data from
+              multiple enterprise systems into centralized reporting
               environments.
             </p>
 
           </article>
 
-          <article class="about-card">
+          <article class="profile-card">
 
-            <p class="card-number">02</p>
+            <p class="card-index">02</p>
 
             <h3>Analytics and Reporting</h3>
 
             <p>
-              Skilled in analyzing business and operational data, validating
-              large datasets, developing dashboards, and communicating
-              insights through Power BI, Tableau, Looker Studio, and Excel.
+              Analyze operational data, validate data quality, develop
+              dashboards, and translate complex information into actionable
+              business insights.
             </p>
 
           </article>
 
-          <article class="about-card">
+          <article class="profile-card">
 
-            <p class="card-number">03</p>
+            <p class="card-index">03</p>
 
             <h3>AI Workflow Automation</h3>
 
             <p>
-              Build intelligent automation systems that classify,
-              summarize, transform, route, monitor, and report information
-              using n8n, Make.com, Gemini AI, OpenAI APIs, and LangChain.
+              Design systems that classify, summarize, transform, route,
+              monitor, and report information through AI-powered workflows.
             </p>
 
           </article>
@@ -379,36 +405,44 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
+      <!-- ==================================================
            SKILLS
-      ========================================== -->
+      =================================================== -->
 
       <section class="content-section" id="skills">
 
         <div class="section-heading">
 
-          <p class="section-kicker">Technical Capabilities</p>
+          <p class="section-kicker">
+            Technical Expertise
+          </p>
 
-          <h2>Skills and Technologies</h2>
+          <h2>
+            Skills and technologies
+          </h2>
 
           <p>
-            Tools and capabilities developed through enterprise experience,
-            academic projects, automation systems, and applied research.
+            Enterprise tools, programming languages, analytics platforms,
+            and automation technologies used across professional and
+            academic projects.
           </p>
 
         </div>
 
         <div class="skills-grid">
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">DE</span>
+              <span class="skill-symbol">DE</span>
 
               <div>
-                <p class="skill-category-number">01</p>
-                <h3>Data Engineering and ETL</h3>
+
+                <p class="skill-number">01</p>
+
+                <h3>Data Engineering</h3>
+
               </div>
 
             </div>
@@ -416,7 +450,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
             <div class="skill-tags">
 
               <span>Informatica PowerCenter</span>
-              <span>ETL Pipelines</span>
+              <span>ETL Development</span>
               <span>Data Integration</span>
               <span>Data Transformation</span>
               <span>Data Validation</span>
@@ -428,15 +462,18 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">DB</span>
+              <span class="skill-symbol">DB</span>
 
               <div>
-                <p class="skill-category-number">02</p>
+
+                <p class="skill-number">02</p>
+
                 <h3>Programming and Databases</h3>
+
               </div>
 
             </div>
@@ -456,15 +493,18 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">BI</span>
+              <span class="skill-symbol">BI</span>
 
               <div>
-                <p class="skill-category-number">03</p>
+
+                <p class="skill-number">03</p>
+
                 <h3>Analytics and Visualization</h3>
+
               </div>
 
             </div>
@@ -475,24 +515,27 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               <span>Tableau</span>
               <span>Looker Studio</span>
               <span>Microsoft Excel</span>
-              <span>KPI Reporting</span>
               <span>Dashboard Design</span>
-              <span>Data Analysis</span>
-              <span>Business Reporting</span>
+              <span>KPI Reporting</span>
+              <span>Business Analytics</span>
+              <span>Executive Reporting</span>
 
             </div>
 
           </article>
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">AI</span>
+              <span class="skill-symbol">AI</span>
 
               <div>
-                <p class="skill-category-number">04</p>
+
+                <p class="skill-number">04</p>
+
                 <h3>AI and Automation</h3>
+
               </div>
 
             </div>
@@ -512,15 +555,18 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">ET</span>
+              <span class="skill-symbol">ET</span>
 
               <div>
-                <p class="skill-category-number">05</p>
+
+                <p class="skill-number">05</p>
+
                 <h3>Enterprise Tools</h3>
+
               </div>
 
             </div>
@@ -539,15 +585,18 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="skill-category">
+          <article class="skill-card">
 
-            <div class="skill-category-header">
+            <div class="skill-card-heading">
 
-              <span class="skill-icon">PM</span>
+              <span class="skill-symbol">PM</span>
 
               <div>
-                <p class="skill-category-number">06</p>
+
+                <p class="skill-number">06</p>
+
                 <h3>Delivery and Methodologies</h3>
+
               </div>
 
             </div>
@@ -556,7 +605,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
               <span>Agile Scrum</span>
               <span>SDLC</span>
-              <span>UAT</span>
+              <span>User Acceptance Testing</span>
               <span>Requirements Gathering</span>
               <span>Production Support</span>
               <span>Technical Documentation</span>
@@ -570,71 +619,481 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
+      <!-- ==================================================
+           FEATURED PROJECTS
+      =================================================== -->
+
+      <section class="content-section" id="projects">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            Selected Work
+          </p>
+
+          <h2>
+            Featured projects
+          </h2>
+
+          <p>
+            End-to-end systems demonstrating workflow architecture,
+            artificial intelligence integration, structured data processing,
+            business analytics, and executive reporting.
+          </p>
+
+        </div>
+
+        <div class="featured-projects">
+
+          <!-- Project 1 -->
+
+          <article class="premium-project-card">
+
+            <div class="project-image-column">
+
+              <div class="project-image-wrapper">
+
+                <div class="project-image-placeholder">
+                  AI Research Automation
+                </div>
+
+                <img
+                  src="{{ '/assets/images/project-ai-paper.jpg' | relative_url }}"
+                  alt="AI Research Paper Summarizer workflow"
+                  class="project-cover-image"
+                  onerror="this.style.display='none';"
+                >
+
+              </div>
+
+            </div>
+
+            <div class="project-information">
+
+              <div class="project-heading-row">
+
+                <div>
+
+                  <p class="project-category">
+                    AI Data Pipeline
+                  </p>
+
+                  <h3>
+                    AI Research Paper Summarizer and Organizer
+                  </h3>
+
+                </div>
+
+                <span class="project-index">01</span>
+
+              </div>
+
+              <p class="project-summary">
+                Built a 27-node n8n workflow that transforms unstructured PDF
+                research papers into structured, searchable records using
+                Google Gemini AI and LangChain.
+              </p>
+
+              <div class="project-highlights">
+
+                <div>
+
+                  <p class="project-highlight-label">
+                    Key capabilities
+                  </p>
+
+                  <ul>
+
+                    <li>
+                      PDF extraction and structured data preparation
+                    </li>
+
+                    <li>
+                      AI summarization, keyword extraction, classification,
+                      findings identification, and audience recommendation
+                    </li>
+
+                    <li>
+                      Conditional routing, Google Sheets storage, and Gmail
+                      notifications
+                    </li>
+
+                    <li>
+                      Retry handling for API limits and service errors
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="project-stack">
+
+                  <p class="project-highlight-label">
+                    Technology stack
+                  </p>
+
+                  <div class="project-tags">
+
+                    <span>n8n</span>
+                    <span>Gemini AI</span>
+                    <span>LangChain</span>
+                    <span>Google Sheets</span>
+                    <span>Gmail</span>
+                    <span>Google Drive</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="project-actions">
+
+                <a
+                  href="https://github.com/srilekhamandali"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button project-button-primary"
+                >
+                  View GitHub
+                </a>
+
+                <span class="project-status">
+                  Case study coming next
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- Project 2 -->
+
+          <article class="premium-project-card">
+
+            <div class="project-image-column">
+
+              <div class="project-image-wrapper">
+
+                <div class="project-image-placeholder">
+                  Executive Portfolio Analytics
+                </div>
+
+                <img
+                  src="{{ '/assets/images/project-portfolio.jpg' | relative_url }}"
+                  alt="AI Portfolio Monitoring executive dashboard"
+                  class="project-cover-image"
+                  onerror="this.style.display='none';"
+                >
+
+              </div>
+
+            </div>
+
+            <div class="project-information">
+
+              <div class="project-heading-row">
+
+                <div>
+
+                  <p class="project-category">
+                    Financial Analytics
+                  </p>
+
+                  <h3>
+                    AI Portfolio Monitoring and Executive Analytics System
+                  </h3>
+
+                </div>
+
+                <span class="project-index">02</span>
+
+              </div>
+
+              <p class="project-summary">
+                Designed a modular monitoring system combining portfolio
+                data, AI-driven sentiment analysis, risk constraints,
+                explainable recommendations, operational storage, and
+                executive dashboards.
+              </p>
+
+              <div class="project-highlights">
+
+                <div>
+
+                  <p class="project-highlight-label">
+                    Key capabilities
+                  </p>
+
+                  <ul>
+
+                    <li>
+                      Financial news sentiment monitoring
+                    </li>
+
+                    <li>
+                      Sector concentration and portfolio exposure detection
+                    </li>
+
+                    <li>
+                      Hold, Review, and Decrease recommendation logic
+                    </li>
+
+                    <li>
+                      Looker Studio dashboards with KPIs, trends, and
+                      executive monitoring tables
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="project-stack">
+
+                  <p class="project-highlight-label">
+                    Technology stack
+                  </p>
+
+                  <div class="project-tags">
+
+                    <span>n8n</span>
+                    <span>OpenAI API</span>
+                    <span>Google Sheets</span>
+                    <span>Looker Studio</span>
+                    <span>Rule-Based Logic</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="project-actions">
+
+                <a
+                  href="https://datastudio.google.com/reporting/39a89bc6-fd68-49fe-b2a4-25d683770964"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button project-button-primary"
+                >
+                  View Dashboard
+                </a>
+
+                <a
+                  href="https://github.com/srilekhamandali"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button project-button-secondary"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- Project 3 -->
+
+          <article class="premium-project-card">
+
+            <div class="project-image-column">
+
+              <div class="project-image-wrapper">
+
+                <div class="project-image-placeholder">
+                  Student Communication Automation
+                </div>
+
+                <img
+                  src="{{ '/assets/images/project-student-query.jpg' | relative_url }}"
+                  alt="AI-enabled student query management workflow"
+                  class="project-cover-image"
+                  onerror="this.style.display='none';"
+                >
+
+              </div>
+
+            </div>
+
+            <div class="project-information">
+
+              <div class="project-heading-row">
+
+                <div>
+
+                  <p class="project-category">
+                    Education Automation
+                  </p>
+
+                  <h3>
+                    AI-Enabled Student Query Management and Announcement
+                    Automation
+                  </h3>
+
+                </div>
+
+                <span class="project-index">03</span>
+
+              </div>
+
+              <p class="project-summary">
+                Developed an AI-enabled workflow that classifies student
+                requests, generates professional responses, routes urgent
+                cases, creates announcement drafts, and updates query status.
+              </p>
+
+              <div class="project-highlights">
+
+                <div>
+
+                  <p class="project-highlight-label">
+                    Key capabilities
+                  </p>
+
+                  <ul>
+
+                    <li>
+                      NLP-based query classification
+                    </li>
+
+                    <li>
+                      Structured JSON response processing
+                    </li>
+
+                    <li>
+                      Priority routing and human review
+                    </li>
+
+                    <li>
+                      Automated Gmail responses, Google Docs drafts, and
+                      Google Sheets tracking
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="project-stack">
+
+                  <p class="project-highlight-label">
+                    Technology stack
+                  </p>
+
+                  <div class="project-tags">
+
+                    <span>Make.com</span>
+                    <span>Gemini AI</span>
+                    <span>Google Sheets</span>
+                    <span>Gmail</span>
+                    <span>Google Docs</span>
+                    <span>JSON Parsing</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="project-actions">
+
+                <a
+                  href="https://aum.video.yuja.com/V/Video?v=16070398&node=68699296&a=163496184"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button project-button-primary"
+                >
+                  View Demo
+                </a>
+
+                <a
+                  href="https://github.com/srilekhamandali"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button project-button-secondary"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- ==================================================
            EXPERIENCE
-      ========================================== -->
+      =================================================== -->
 
       <section class="content-section" id="experience">
 
         <div class="section-heading">
 
-          <p class="section-kicker">Career Journey</p>
+          <p class="section-kicker">
+            Career Journey
+          </p>
 
-          <h2>Professional Experience</h2>
+          <h2>
+            Professional experience
+          </h2>
 
           <p>
-            Enterprise data engineering, business analytics, academic
-            research, technical instruction, and publication support.
+            Enterprise data engineering, analytics, research, instruction,
+            and technology-focused writing experience.
           </p>
 
         </div>
 
         <div class="experience-timeline">
 
-          <article class="experience-item">
+          <article class="timeline-item">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-dot"></span>
 
-            <div class="experience-card">
+            <div class="timeline-card">
 
-              <div class="experience-header">
+              <div class="timeline-header">
 
                 <div>
 
-                  <p class="experience-type">
+                  <p class="timeline-type">
                     Technology Research and Writing
                   </p>
 
                   <h3>Writing Assistant</h3>
 
-                  <p class="experience-company">
+                  <p class="timeline-company">
                     Axcell LLC · Remote
                   </p>
 
                 </div>
 
-                <p class="experience-date">
+                <span class="timeline-date">
                   July 2026 – Present
-                </p>
+                </span>
 
               </div>
 
               <ul>
 
                 <li>
-                  Conduct technology research and analyze emerging trends
-                  for a technology management publication.
+                  Conduct technology research and analyze emerging trends.
                 </li>
 
                 <li>
-                  Develop technical documentation, process diagrams, and
-                  educational content in collaboration with subject-matter
+                  Develop publication-ready technical documentation,
+                  educational content, and process diagrams.
+                </li>
+
+                <li>
+                  Organize references and collaborate with subject-matter
                   experts.
-                </li>
-
-                <li>
-                  Organize references and synthesize research into structured,
-                  publication-ready documentation.
                 </li>
 
               </ul>
@@ -643,17 +1102,17 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="experience-item">
+          <article class="timeline-item">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-dot"></span>
 
-            <div class="experience-card">
+            <div class="timeline-card">
 
-              <div class="experience-header">
+              <div class="timeline-header">
 
                 <div>
 
-                  <p class="experience-type">
+                  <p class="timeline-type">
                     Academic Research and Instruction
                   </p>
 
@@ -661,41 +1120,33 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
                     Graduate Teaching Assistant and Research Assistant
                   </h3>
 
-                  <p class="experience-company">
+                  <p class="timeline-company">
                     Auburn University at Montgomery
                   </p>
 
                 </div>
 
-                <p class="experience-date">
+                <span class="timeline-date">
                   August 2025 – May 2026
-                </p>
+                </span>
 
               </div>
 
               <ul>
 
                 <li>
-                  Assisted undergraduate and graduate students with
-                  coursework, technical guidance, and project-management
-                  tutorials.
+                  Supported undergraduate and graduate students through
+                  coursework and technical guidance.
                 </li>
 
                 <li>
                   Conducted qualitative and quantitative research on
-                  innovation ecosystems, technology-business incubators,
-                  technostress, and incubator success factors.
+                  innovation ecosystems and technology-business incubators.
                 </li>
 
                 <li>
-                  Performed literature reviews, analyzed research data, and
-                  contributed to academic publications, conference
-                  presentations, and poster sessions.
-                </li>
-
-                <li>
-                  Served as Research Club Vice President and coordinated
-                  research-focused student initiatives.
+                  Contributed to academic publications, conferences, and
+                  poster presentations.
                 </li>
 
               </ul>
@@ -704,78 +1155,62 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="experience-item featured-experience">
+          <article class="timeline-item timeline-item-featured">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-dot"></span>
 
-            <div class="experience-card">
+            <div class="timeline-card">
 
-              <div class="featured-label">
+              <p class="featured-experience-label">
                 Core Enterprise Experience
-              </div>
+              </p>
 
-              <div class="experience-header">
+              <div class="timeline-header">
 
                 <div>
 
-                  <p class="experience-type">
+                  <p class="timeline-type">
                     Enterprise Data Engineering
                   </p>
 
                   <h3>Systems Engineer</h3>
 
-                  <p class="experience-company">
+                  <p class="timeline-company">
                     Tata Consultancy Services · Hyderabad, India
                   </p>
 
                 </div>
 
-                <p class="experience-date">
+                <span class="timeline-date">
                   May 2021 – June 2024
-                </p>
+                </span>
 
               </div>
 
               <ul>
 
                 <li>
-                  Designed, developed, and maintained enterprise ETL pipelines
-                  using Informatica PowerCenter and SQL.
+                  Designed and maintained enterprise ETL pipelines using
+                  Informatica PowerCenter and SQL.
                 </li>
 
                 <li>
-                  Optimized SQL queries, ETL mappings, and transformation
-                  workflows across more than 20 pipelines, reducing execution
-                  time by approximately 20%.
+                  Optimized SQL and ETL workflows across more than 20
+                  pipelines, reducing execution time by approximately 20%.
                 </li>
 
                 <li>
-                  Analyzed and validated enterprise datasets containing more
-                  than 2 million records to identify data-quality issues.
+                  Validated datasets containing more than 2 million records.
                 </li>
 
                 <li>
-                  Managed development and production-support requests through
-                  ServiceNow and JIRA, resolving an average of 30 tickets per
-                  month.
+                  Managed production and development requests through
+                  ServiceNow and JIRA.
                 </li>
 
                 <li>
-                  Resolved workflow failures, infrastructure issues,
-                  permission errors, and performance bottlenecks in production
-                  environments.
-                </li>
-
-                <li>
-                  Collaborated with more than five cross-functional
-                  stakeholders to translate business requirements into
-                  scalable ETL and reporting solutions.
-                </li>
-
-                <li>
-                  Participated in requirements analysis, development, testing,
-                  deployment, UAT, and post-production support within Agile
-                  Scrum teams.
+                  Supported requirements, development, testing, deployment,
+                  UAT, and post-production activities.
                 </li>
 
               </ul>
@@ -784,54 +1219,48 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="experience-item">
+          <article class="timeline-item">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-dot"></span>
 
-            <div class="experience-card">
+            <div class="timeline-card">
 
-              <div class="experience-header">
+              <div class="timeline-header">
 
                 <div>
 
-                  <p class="experience-type">
-                    Business Intelligence and Analytics
+                  <p class="timeline-type">
+                    Business Intelligence
                   </p>
 
                   <h3>Data Analyst</h3>
 
-                  <p class="experience-company">
+                  <p class="timeline-company">
                     Roche · Mumbai, India
                   </p>
 
                 </div>
 
-                <p class="experience-date">
+                <span class="timeline-date">
                   January 2021 – May 2021
-                </p>
+                </span>
 
               </div>
 
               <ul>
 
                 <li>
-                  Analyzed operational and business datasets using SQL and
-                  Excel to identify trends and actionable insights.
+                  Analyzed business and operational datasets using SQL and
+                  Excel.
                 </li>
 
                 <li>
-                  Developed Power BI dashboards and Excel reports to improve
-                  business visibility.
+                  Developed Power BI dashboards and reporting solutions.
                 </li>
 
                 <li>
-                  Performed data extraction, profiling, cleansing, validation,
-                  and transformation.
-                </li>
-
-                <li>
-                  Collaborated with stakeholders to gather reporting
-                  requirements and deliver analytical solutions.
+                  Performed data extraction, profiling, cleansing,
+                  validation, and transformation.
                 </li>
 
               </ul>
@@ -840,31 +1269,31 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
           </article>
 
-          <article class="experience-item">
+          <article class="timeline-item">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-dot"></span>
 
-            <div class="experience-card">
+            <div class="timeline-card">
 
-              <div class="experience-header">
+              <div class="timeline-header">
 
                 <div>
 
-                  <p class="experience-type">
+                  <p class="timeline-type">
                     Software Development
                   </p>
 
                   <h3>Software Engineer</h3>
 
-                  <p class="experience-company">
+                  <p class="timeline-company">
                     Hexaware Technologies · Chennai, India
                   </p>
 
                 </div>
 
-                <p class="experience-date">
+                <span class="timeline-date">
                   January 2020 – June 2020
-                </p>
+                </span>
 
               </div>
 
@@ -877,7 +1306,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
                 <li>
                   Participated in testing, debugging, deployment, and
-                  application-performance optimization.
+                  performance optimization.
                 </li>
 
               </ul>
@@ -890,344 +1319,25 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
-           PROJECTS
-      ========================================== -->
-
-      <section class="content-section" id="projects">
-
-        <div class="section-heading">
-
-          <p class="section-kicker">Selected Work</p>
-
-          <h2>Featured Projects</h2>
-
-          <p>
-            Projects demonstrating data processing, AI integration,
-            automation architecture, analytics, reporting, and
-            production-level troubleshooting.
-          </p>
-
-        </div>
-
-        <div class="projects-list">
-
-          <article class="project-card project-card-featured">
-
-            <div class="project-top-row">
-
-              <div>
-
-                <p class="project-category">
-                  AI Data Pipeline
-                </p>
-
-                <h3>
-                  AI Research Paper Summarizer and Organizer
-                </h3>
-
-              </div>
-
-              <span class="project-number">01</span>
-
-            </div>
-
-            <p class="project-overview">
-              Built a 27-node automated workflow that converts unstructured
-              PDF research papers into structured and searchable research
-              records.
-            </p>
-
-            <div class="project-content-grid">
-
-              <div>
-
-                <h4>Key Capabilities</h4>
-
-                <ul>
-
-                  <li>
-                    Extracts and processes content from uploaded PDF files.
-                  </li>
-
-                  <li>
-                    Uses six AI processing stages for summarization, keyword
-                    extraction, classification, findings identification,
-                    difficulty rating, and audience recommendation.
-                  </li>
-
-                  <li>
-                    Routes results conditionally and writes structured outputs
-                    to Google Sheets.
-                  </li>
-
-                  <li>
-                    Sends automated Gmail notifications after successful
-                    processing.
-                  </li>
-
-                  <li>
-                    Handles API rate limits, service outages, retries, and
-                    duplicate-output issues.
-                  </li>
-
-                </ul>
-
-              </div>
-
-              <div class="project-details-panel">
-
-                <p class="project-detail-label">Technology Stack</p>
-
-                <div class="project-technology-tags">
-
-                  <span>n8n</span>
-                  <span>Google Gemini AI</span>
-                  <span>LangChain</span>
-                  <span>Google Sheets</span>
-                  <span>Gmail</span>
-                  <span>Google Drive</span>
-
-                </div>
-
-                <a
-                  href="https://github.com/srilekhamandali"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-link"
-                >
-                  View GitHub Profile →
-                </a>
-
-              </div>
-
-            </div>
-
-          </article>
-
-          <article class="project-card">
-
-            <div class="project-top-row">
-
-              <div>
-
-                <p class="project-category">
-                  Financial Analytics
-                </p>
-
-                <h3>
-                  AI Portfolio Monitoring and Executive Analytics System
-                </h3>
-
-              </div>
-
-              <span class="project-number">02</span>
-
-            </div>
-
-            <p class="project-overview">
-              Designed an end-to-end monitoring system combining financial
-              news sentiment, portfolio risk analysis, compliance monitoring,
-              recommendations, and executive reporting.
-            </p>
-
-            <div class="project-content-grid">
-
-              <div>
-
-                <h4>Key Capabilities</h4>
-
-                <ul>
-
-                  <li>
-                    Ingests portfolio and market information through automated
-                    workflows.
-                  </li>
-
-                  <li>
-                    Evaluates sentiment trends and sector-concentration risks.
-                  </li>
-
-                  <li>
-                    Detects portfolio constraints and exposure imbalances.
-                  </li>
-
-                  <li>
-                    Produces explainable Hold, Review, and Decrease
-                    recommendations.
-                  </li>
-
-                  <li>
-                    Presents KPIs, sentiment trends, allocation, and
-                    recommendations through executive dashboards.
-                  </li>
-
-                </ul>
-
-              </div>
-
-              <div class="project-details-panel">
-
-                <p class="project-detail-label">Technology Stack</p>
-
-                <div class="project-technology-tags">
-
-                  <span>n8n</span>
-                  <span>OpenAI API</span>
-                  <span>Google Sheets</span>
-                  <span>Looker Studio</span>
-                  <span>Workflow Automation</span>
-
-                </div>
-
-                <a
-                  href="https://github.com/srilekhamandali"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-link"
-                >
-                  View GitHub Profile →
-                </a>
-
-              </div>
-
-            </div>
-
-          </article>
-
-          <article class="project-card">
-
-            <div class="project-top-row">
-
-              <div>
-
-                <p class="project-category">
-                  Education Automation
-                </p>
-
-                <h3>
-                  AI-Enabled Student Query Management and Announcement
-                  Automation
-                </h3>
-
-              </div>
-
-              <span class="project-number">03</span>
-
-            </div>
-
-            <p class="project-overview">
-              Built an AI-powered workflow that classifies student requests,
-              drafts responses, tracks status, escalates urgent cases, and
-              prepares weekly announcements.
-            </p>
-
-            <div class="project-content-grid">
-
-              <div>
-
-                <h4>Key Capabilities</h4>
-
-                <ul>
-
-                  <li>
-                    Classifies student requests using natural-language
-                    processing.
-                  </li>
-
-                  <li>
-                    Generates context-aware response drafts.
-                  </li>
-
-                  <li>
-                    Routes high-priority cases for instructor or GTA review.
-                  </li>
-
-                  <li>
-                    Creates weekly announcement drafts in Google Docs.
-                  </li>
-
-                  <li>
-                    Maintains structured request tracking in Google Sheets.
-                  </li>
-
-                  <li>
-                    Projected to reduce manual communication-handling time by
-                    more than 50%.
-                  </li>
-
-                </ul>
-
-              </div>
-
-              <div class="project-details-panel">
-
-                <p class="project-detail-label">Technology Stack</p>
-
-                <div class="project-technology-tags">
-
-                  <span>Make.com</span>
-                  <span>Google Gemini AI</span>
-                  <span>Google Sheets</span>
-                  <span>Gmail</span>
-                  <span>Google Docs</span>
-
-                </div>
-
-                <a
-                  href="https://github.com/srilekhamandali"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-link"
-                >
-                  View GitHub Profile →
-                </a>
-
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-
-        <div class="development-note">
-
-          <div>
-
-            <p class="development-note-title">
-              Project documentation in progress
-            </p>
-
-            <p>
-              Detailed architecture diagrams, implementation notes,
-              screenshots, sample datasets, workflow exports, and
-              demonstration videos will be added to individual project
-              repositories.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- =========================================
+      <!-- ==================================================
            PUBLICATIONS
-      ========================================== -->
+      =================================================== -->
 
       <section class="content-section" id="publications">
 
         <div class="section-heading">
 
-          <p class="section-kicker">Academic Contributions</p>
+          <p class="section-kicker">
+            Academic Contributions
+          </p>
 
-          <h2>Research and Publications</h2>
+          <h2>
+            Research and publications
+          </h2>
 
           <p>
-            Research focused on innovation ecosystems,
-            technology-business incubators, entrepreneurship, and
-            societal impact.
+            Co-authored work focused on innovation ecosystems,
+            technology-business incubators, and societal impact.
           </p>
 
         </div>
@@ -1240,9 +1350,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               01
             </div>
 
-            <div class="publication-content">
+            <div>
 
-              <p class="publication-type">
+              <p class="publication-role">
                 Co-authored Conference Paper
               </p>
 
@@ -1259,10 +1369,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
                 Manila, Philippines · 2026
               </p>
 
-              <p class="publication-description">
-                Research focused on the development, growth, and
-                sustainability of an innovation-driven entrepreneurial
-                ecosystem.
+              <p class="publication-summary">
+                Research examining the development and sustainability of
+                an innovation-driven entrepreneurial ecosystem.
               </p>
 
             </div>
@@ -1275,9 +1384,9 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               02
             </div>
 
-            <div class="publication-content">
+            <div>
 
-              <p class="publication-type">
+              <p class="publication-role">
                 Co-authored Conference Paper
               </p>
 
@@ -1294,10 +1403,10 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
                 Asheville, North Carolina · 2026
               </p>
 
-              <p class="publication-description">
-                Research examining how technology-business incubators
-                contribute to entrepreneurial ecosystem growth and societal
-                development.
+              <p class="publication-summary">
+                Research examining the role of technology-business
+                incubators in entrepreneurial ecosystem growth and
+                societal development.
               </p>
 
             </div>
@@ -1308,17 +1417,21 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
+      <!-- ==================================================
            EDUCATION
-      ========================================== -->
+      =================================================== -->
 
       <section class="content-section" id="education">
 
         <div class="section-heading">
 
-          <p class="section-kicker">Academic Background</p>
+          <p class="section-kicker">
+            Academic Background
+          </p>
 
-          <h2>Education</h2>
+          <h2>
+            Education
+          </h2>
 
         </div>
 
@@ -1386,37 +1499,37 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
 
       </section>
 
-      <!-- =========================================
+      <!-- ==================================================
            CONTACT
-      ========================================== -->
+      =================================================== -->
 
       <section class="contact-section" id="contact">
 
-        <div class="contact-decoration contact-decoration-one"></div>
-        <div class="contact-decoration contact-decoration-two"></div>
+        <div class="contact-glow contact-glow-one"></div>
+        <div class="contact-glow contact-glow-two"></div>
 
         <div class="contact-content">
 
           <p class="contact-kicker">
-            Let’s Build Something Meaningful
+            Let’s Connect
           </p>
 
           <h2>
             Looking for a data professional who combines enterprise
-            experience with modern automation?
+            experience with intelligent automation?
           </h2>
 
           <p>
-            I am pursuing opportunities in Data Engineering, ETL Development,
-            Data Analytics, Analytics Engineering, Business Intelligence,
-            and AI-enabled workflow automation.
+            I am pursuing opportunities in Data Engineering, ETL
+            Development, Data Analytics, Analytics Engineering, Business
+            Intelligence, and AI-enabled workflow automation.
           </p>
 
           <div class="contact-actions">
 
             <a
               href="mailto:mandalisrilekha12@gmail.com"
-              class="button contact-primary-button"
+              class="contact-button contact-button-primary"
             >
               Email Me
             </a>
@@ -1425,7 +1538,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               href="https://www.linkedin.com/in/srilekha-mandali-2849691ab"
               target="_blank"
               rel="noopener noreferrer"
-              class="button contact-secondary-button"
+              class="contact-button contact-button-secondary"
             >
               LinkedIn
             </a>
@@ -1434,7 +1547,7 @@ description: Professional portfolio of Srilekha Mandali, Data Engineer, ETL Deve
               href="https://github.com/srilekhamandali"
               target="_blank"
               rel="noopener noreferrer"
-              class="button contact-secondary-button"
+              class="contact-button contact-button-secondary"
             >
               GitHub
             </a>
