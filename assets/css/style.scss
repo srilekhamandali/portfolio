@@ -56,6 +56,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--text);
   background:
     radial-gradient(
@@ -91,6 +92,12 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 3px solid rgba(21, 94, 239, 0.35);
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 h1,
@@ -202,7 +209,7 @@ section[id] {
   height: 100%;
   background: white;
   object-fit: cover;
-  object-position: center;
+  object-position: center 20%;
 }
 
 .availability-badge {
@@ -808,8 +815,9 @@ section[id] {
   inset: 0;
   width: 100%;
   height: 100%;
+  padding: 10px;
   background: white;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -1354,6 +1362,17 @@ section[id] {
 }
 
 /* ==================================================
+   SHORT DESKTOP SCREENS
+================================================== */
+
+@media screen and (min-width: 901px) and (max-height: 760px) {
+  .sidebar-content {
+    position: static;
+    min-height: auto;
+  }
+}
+
+/* ==================================================
    LAPTOP
 ================================================== */
 
@@ -1660,5 +1679,23 @@ section[id] {
 
   .profile-role span {
     display: none;
+  }
+}
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
